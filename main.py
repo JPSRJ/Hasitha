@@ -8,6 +8,8 @@ def final_out(words, words_exsist_counter):
     for i in words:
         if len(i) > max_len:
             max_len = len(i)
+    if max_len < 7:
+        max_len = 7
 
     print('-'*(max_len+31))
     print('|  words'+' '*(max_len-3)+'|  Repetition frequency  |')
